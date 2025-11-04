@@ -1,0 +1,62 @@
+/* VisualizerBars.css */
+.array-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-end;
+    height: 520px;/* a little taller than the max bar (500px) */
+    padding: 0 10px;
+    overflow: hidden;
+    border: 1px solid #444;
+    border-radius: 10px;
+    background: #111;
+    box-shadow: 10px 10px 10px rgb(83, 82, 82);
+}
+
+.array-bar {
+    flex: 1;
+    margin: 0 1px;
+    background: #4facfe;
+    position: relative;
+    transition: background 0.2s, height 0.3s ease;
+    /* optional smooth height */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: visible;
+    /* allow label to be visible */
+}
+.array-bar.default {
+    background-color: #3b82f6;
+    /* blue */
+}
+
+.array-bar.comparing {
+    background-color: #ef4444;
+    /* red */
+}
+
+.array-bar.sorted {
+    background-color: #22c55e;
+    /* green */
+}
+
+.bar-number {
+    position: absolute;
+    bottom: 4px;
+    /* inside the bar */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+
+.array-bar.pivot {
+    background-color: #fbbf24;
+    /* amber/yellow */
+    box-shadow: 0 0 8px rgba(251, 191, 36, 0.8);
+}
