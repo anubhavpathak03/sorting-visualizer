@@ -239,7 +239,7 @@ const SortingVisualizer = () => {
     return (
         <div className='my-app'>
             <h1 className='text-5xl font-display uppercase'>
-                Sorting Visulaizer
+                Sorting Visualizer
             </h1>
 
             <div className='text-center mt-6'>
